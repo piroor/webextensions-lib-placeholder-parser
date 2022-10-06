@@ -4,7 +4,11 @@
 
 This is a tiny library to parse a text containing placholders like `%SOMETHING%`.
 
-Usage:
+## Features
+
+* Supports nested functional placeholders like `%AAA(%BBB("bbb")%, %CCC%)%`
+
+## Usage
 
 ```javascript
 import * as PlaceHolderParser from './placeholder-parser.js';
