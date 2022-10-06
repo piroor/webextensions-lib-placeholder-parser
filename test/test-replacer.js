@@ -22,7 +22,7 @@ See also:
 https://developer.mozilla.org/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet
 */
 
-import * as Replacer from '../common/replacer.js';
+import * as Replacer from '../src/replacer.js';
 
 import { assert } from 'tiny-esm-test-runner';
 const { is, ok, ng } = assert;

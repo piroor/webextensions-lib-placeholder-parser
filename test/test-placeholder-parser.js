@@ -3,7 +3,7 @@
 */
 'use strict';
 
-import * as Parser from '../common/placeholder-parser.js';
+import * as Parser from '../src/placeholder-parser.js';
 
 import { assert } from 'tiny-esm-test-runner';
 const { is /*, ok, ng*/ } = assert;
