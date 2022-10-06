@@ -1,5 +1,7 @@
 # PlaceHolder Parser
 
+![Build Status](https://github.com/piroor/webextensions-lib-placeholder-parser/actions/workflows/main.yml/badge.svg?branch=main)
+
 This is a tiny library to parse a text containing placholders like `%SOMETHING%`.
 
 Usage:
