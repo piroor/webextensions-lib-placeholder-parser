@@ -1,0 +1,19 @@
+name: CI/CD
+
+on: [push]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: setup minimum version Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '16.x'
+    - uses: actions/checkout@v1
+    - name: prepare
+      run: make install_dependencies
+    - name: run test
+      run: npm run test
