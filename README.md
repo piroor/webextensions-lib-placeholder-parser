@@ -19,8 +19,6 @@ import * as Replacer from './replacer.js';
 
 function fillPlaceHoldersWithTab(input, tab) {
   return PlaceHolderParser.process(input, (name, rawArgs, ...args) => {
-
-
     switch (name.trim().toLowerCase()) {
       case 'replace':
         return Replacer.replace(args);
@@ -32,7 +30,6 @@ function fillPlaceHoldersWithTab(input, tab) {
       case 'text':
         return tab.title;
     }
-
     throw new Error(`Unknown placeholder: ${name}`);
   });
 }
