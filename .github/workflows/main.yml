@@ -14,6 +14,6 @@ jobs:
         node-version: '16.x'
     - uses: actions/checkout@v1
     - name: prepare
-      run: make install_dependencies
+      run: make install_dependency
     - name: run test
       run: npm run test
