@@ -6,7 +6,10 @@ This is a tiny library to parse a text containing placholders like `%SOMETHING%`
 
 ## Features
 
-* Supports nested functional placeholders like `%AAA(%BBB("bbb")%, %CCC%)%`
+* Simple placeholders like `%AAA%`
+* Functional placeholders like `%BBB("bbb", "ccc", "ddd")%`
+* Simple placeholders in functional placeholders like `%BBB("%AAA%", "bbb", "ccc", "ddd")%`
+* Nested functional placeholders like `%AAA("%BBB(\"bbb\")%", %CCC%)%`
 
 ## Usage
 
